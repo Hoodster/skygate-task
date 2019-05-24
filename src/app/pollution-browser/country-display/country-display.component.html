@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-12 picker">
+    <plt-pollution-type-picker *ngIf="showPollutionPicker" (activeParticle)="setActiveParticle($event)"></plt-pollution-type-picker>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12" *ngFor="let city of citiesToDisplay">
+    <plt-polluted-city-display [wikiInformation]=city ></plt-polluted-city-display>
+  </div>
+  <div *ngIf="showError" class="col-12">
+    <p >Couldn't reach any city</p>
+    <!-- TODO error display -->
+  </div>
+</div>

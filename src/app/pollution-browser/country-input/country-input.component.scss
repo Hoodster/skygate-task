@@ -1,0 +1,43 @@
+@import "../../../variables.scss";
+
+.form-group {
+    padding: 0px;
+    margin-bottom: -10px;    
+}
+
+.country-input-dropdown {
+    position: absolute;
+    margin: .125rem 0 0;
+    border-radius: 0.25rem;
+    border: 1px solid rgba(0,0,0,.15);
+    z-index: 1;
+    width: 100%;
+    background: white;
+    padding: 0.5rem;
+    padding-bottom: 0;
+    overflow-y: auto;
+    max-height: 100px;
+}
+
+.country-proposition {
+    color: rgba(0,0,0,0.4);
+    width: 100%;
+    cursor: default;
+}
+
+.country-proposition:hover {
+    color: rgba(0,0,0,0.6);
+}
+
+.country-proposition:last-child {
+    margin-bottom: 5px;
+}
+
+.select-country-button {
+    background-color: $button-color;
+    color: $background-primary;
+    border-color: $button-color;
+    position: absolute;
+    right: 0;
+    top: 0;
+}

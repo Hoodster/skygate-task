@@ -1,0 +1,25 @@
+@import '../../variables.scss';
+
+.header-title {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+.country-input {
+    background-color: $background-secondary;
+}
+
+.header {
+    background-color: $background-secondary;
+}
+
+.country-display {
+    border-top: 1px solid rgba(0,0,0,0.1);
+    padding-top: 50px;
+    margin: 0px;    
+}
+
+.flex-container {
+    min-width: 575px;
+}

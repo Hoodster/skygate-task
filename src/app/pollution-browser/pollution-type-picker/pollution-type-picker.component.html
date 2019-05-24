@@ -1,0 +1,10 @@
+<div class="row">
+  <div class="col-3"></div>
+  <div class="col-6">
+    <div class="row">
+      <div class="picker-option" *ngFor="let particle of options" (click)="setActive(particle.id)" [ngClass]="{'picker-option-active': checkIfActive(particle.id)}">
+        <p class="option-description">{{particle.name}}</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<div class="row">
+  <div class="col-xs-2 col-3 col-lg-4"></div>
+  <div class="col-xs-8 col-6 col-lg-4 form-group" preventToggle (preventToggle)="closeDropdown()">
+    <input class="form-control" (click)="dropdownStateChange()" (keyup)="saveInputValue(countryToShow.value)" type="text" placeholder="Select country"[formControl]="countryToShow">
+    <button type="submit" class="btn select-country-button" [disabled]="!countryToShow.valid" (click)="setActiveCountry()">Check country</button>
+    <div class="country-input-dropdown" *ngIf="showDropdown">
+      <a *ngFor="let country of dropdownCountries | dropdownFilter: getInputValue()"><p class="country-proposition" (click)="setInputValue(country)" (click)="setActiveCountry()">{{country}}</p></a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+@import '../../../variables.scss';
+
+.picker-option {
+    display: flex;
+    flex: 1;
+    background: $background-primary;
+    border: 2px solid $background-secondary;
+    border-right: 0px;
+    transition: background 0.25s, color 0.25s;
+    text-align: center;
+}
+
+.picker-option:hover {
+    background: lighten($background-secondary, 20%);
+    color: $background-primary;
+}
+
+.picker-option:first-of-type {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.picker-option:last-of-type {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-right: 2px solid $background-secondary;
+}
+
+.picker-option-active {
+    background-color: $background-secondary;
+    color: $background-primary;
+}
+
+.option-description {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0;
+}

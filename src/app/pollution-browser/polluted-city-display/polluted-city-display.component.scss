@@ -1,0 +1,36 @@
+@import '../../../variables.scss';
+
+.row {
+    flex: 1;
+}
+
+.city-tile-header {
+    color: #fff;
+    background-color: $background-secondary;
+    line-height: 3rem;
+}
+
+.icon-styling {
+    text-align: center;
+    line-height: 40px;
+    font-size: 34px;
+    cursor: pointer;
+    transition: transform 1s;
+}
+
+.icon-active {
+    transform: rotate(180deg);
+}
+
+.city-tile-body {
+    border: 2px solid $background-secondary;
+    border-top: 0px;
+    height: auto;
+    display: block;
+    
+}
+
+.hide-body {
+    height: 0;
+    display: none;
+}

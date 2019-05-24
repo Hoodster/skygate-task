@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-12 city-tile-header">
+    <div class="row">
+      <div class="col-10">
+        <h3>{{wikiInformation.title}}</h3>
+      </div>
+      <div class="col-2 icon-styling" [ngClass]="{'icon-active': showBody}">
+          <fa-icon [icon]="caretIcon" (click)="toggleBody()"></fa-icon>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 city-tile-body" [ngClass]="{'hide-body': !showBody}">
+    <div class="row">
+      <plt-wikipedia-information [wikiInformation]=wikiInformation></plt-wikipedia-information>
+    </div>
+  </div>
+</div>
